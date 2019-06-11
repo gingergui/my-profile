@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(50, 50, 50);
+  background-color: #ffd5be;
   color: brown;
   font-family: 'Lora', serif;
   font-weight: lighter;
@@ -10,25 +10,25 @@ body {
 
 h1, h2 {
 	font-family: 'Roboto', sans-serif;
-
 }
 
 
 h1 {
-	color: #FF487E;
-    font-weight: 500;
-    letter-spacing: 4px;
+	color: #ff9776;
+    font-weight: 600;
+    letter-spacing: 3px;
     font-size: 25px;
     text-transform: uppercase;
     line-height: 50px;
-    letter-spacing: 0.1em;        
+    letter-spacing: 0.1em;       
     
 }
 
 h2 {
-  color: rgb(100, 100, 100);
+  color: #ff9776;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 a {
@@ -38,31 +38,75 @@ a {
 }
 
 a:hover {
-	color: black;
+	color: orange;
+	text-decoration: underline;
 
 }
 
-.box-container{
+.box-white{
 	background: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     width: 70%;
-    margin-bottom: 20px;
+    margin: 25px auto;
     text-align: center;
 
 }
 
 
 .container{
-	margin: 0 5%;
+	margin: 40px auto;
+	width: 700px;
 }
 
-.socialmedia{
+@media(max-width: 760px) {
+	.container{
+        width: 600px;
+	}
+}
+
+@media(max-width: 500px) {
+	.container{
+        width: 400px;
+	}
+}
+
+.socialmedia-inline{
 	list-style: none; 
+	padding-left: 0px;
 }
 
-.socialmedia li{
+.socialmedia-inline li{
 	display: inline;
-	padding: 15px;
+	padding: 20px;
+
 }
+
+.socialmedia-inline i{
+	font-size: 30px;
+	color: pink;
+}
+
+.socialmedia-inline i:hover{
+	color: orange;
+}
+
+.img-circle{
+	width: 100px;
+	border-radius: 70%;
+	border: 2px solid pink;
+}
+
+.btn-pink{
+	background-color: pink;
+	color: white;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+
+#introduction p {
+	margin-bottom: 40px;
+
+}
+
